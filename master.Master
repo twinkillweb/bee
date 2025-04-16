@@ -1,0 +1,354 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Networkes.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bee Network</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo-2.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <!-- pre loader area start -->
+            <div class="loader-wrapper">
+                <div class="loader"></div>
+                <div class="loder-section left-section" style="background: white;"></div>
+                <div class="loder-section right-section" style="background: whitesmoke;">
+                </div>
+                <div class="loader-brand-icon">
+                    <img src="assets/img/logo/logo-2.png" style="width: 260px;"
+                        alt="">
+                </div>
+            </div>
+            <!-- pre loader area end -->
+
+
+
+
+
+            <!-- back to top start -->
+            <div class="back-to-top-wrapper">
+                <button id="back_to_top" type="button" class="back-to-top-btn">
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <!-- back to top end -->
+
+
+
+
+
+    <!-- tp-offcanvus-area-start -->
+    <div class="tpoffcanvas-area">
+        <div class="tpoffcanvas">
+            <div class="tpoffcanvas__close-btn">
+                <button type="button" class="close-btn"><i class="fal fa-times" ></i></button>
+            </div>
+            <div class="tpoffcanvas__logo">
+                <a href="index.html">
+                    <img src="assets/img/logo/logo-2.png" style="width: 150px;margin: -30px;" alt="">
+                </a>
+            </div>
+            <div class="tpoffcanvas__title">
+                <p><strong>Bee</strong> is one of the best academies to teach kids the fundamentals of networking in a fun and engaging way.</p>
+            </div>
+            <div class="tp-main-menu-mobile d-xl-none"></div>
+            <div class="tpoffcanvas__contact-info">
+                <div class="tpoffcanvas__contact-title">
+                    <h5>Contact us</h5>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://www.google.com/maps/" target="_blank">Cairo, Maadi, Egypt</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mtwins2022@gmail.com"><span class="__cf_email__">mtwins2022@gmail.com</span></a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <a href="tel:+201024594238">+201024594238</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tpoffcanvas__input">
+                <div class="tpoffcanvas__input-title">
+                    <h4>Get Update</h4>
+                </div>
+                <form action="#">
+                    <div class="p-relative">
+                        <input type="text" placeholder="Enter your Mail">
+                        <button>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="tpoffcanvas__social">
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
+
+
+
+
+            <!-- header area start -->
+            <header class="tp-header-height" >
+                <div class="tp-header-top black-bg pt-10 pb-10 pl-110 pr-110 d-none d-xl-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="tp-header-top-address">
+                                    <span><i class="fa-thin fa-location-dot"  style="color:white;"></i><a href="https://www.google.com/maps/"  style="color:white;">Cairo,Egypt</a></span>
+                                    <span><i class="fa-light fa-envelope"  style="color:white;"></i><a href="mailto:techubinfo@mail.com"  style="color:white;">BeeNet@info.com</a></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="tp-header-top-right d-flex justify-content-end">
+                                    <div class="tp-header-top-menu">
+                                        <ul>
+                                            <li><a href="faq.aspx" style="color:white;">FAQ <span>/</span></a></li>
+                                            <li><a href="Networks.aspx"  style="color:white;">Networks <span>/</span></a></li>
+                                            <li><a href="contact.aspx"  style="color:white;">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-sticky" class="tp-header-bottom">
+                    <div class="tp-header-area">
+                        <div class="container">
+                            <div class="tp-header-3-wrapper p-relative">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-2 col-lg-6 col-md-5 col-6">
+                                        <div class="logo">
+                                            <a href="index.aspx">
+                                                <img src="assets/img/logo/logo-2.png" style="width: 120px" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-10 d-none d-xl-block">
+                                        <div class="main-menu main-menu-2 main-mega-menu text-center">
+                                            <nav class="tp-main-menu-content">
+                                                <ul>
+                                                    <li class="p-static"><a class="color-active" href="index.aspx">Home</a>
+                                                        
+                                                    </li>
+                                                    <li><a href="come.aspx<%--about.aspx--%>">About Us</a></li>
+                                                    <li class="has-dropdown"><a href="Networks">Networks</a>
+                                                        <ul class="submenu tp-submenu">
+                                                            
+                                                            <li><a href="Networking-Fundamentals.aspx">Networking Fundamentals</a></li>
+                                                            <li><a href="Networking-Protocols.aspx">Networking Protocols</a></li>
+                                                            <li><a href="Routing-Switching.aspx">Routing and Switching</a></li>
+                                                            <li><a href="Network-Security.aspx">Network Security</a></li>
+                                                            <li><a href="Wireless-Networks.aspx">Wireless Networks </a></li>
+                                                            <li><a href="Labs.aspx"> Hands-On Labs</a></li>
+                                                            <li><a href="Network-Administration.aspx">Network Administration</a></li>
+                                                            <li><a href="Cloud-Networking.aspx">Cloud Computing </a></li>
+                                                            <li><a href="Certifications-Guide.aspx">Certifications Guide</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-dropdown"><a href="courses.aspx"> Networking Courses</a>
+                                                        <ul class="submenu tp-submenu">
+                                                            <li><a href="Introduction-Course.aspx">Introduction to Networking </a></li>
+                                                            <li><a href="Networking-Course.aspx"> (CCNA-Level Intro)</a></li>
+                                                            <li><a href="Comp-Course.aspx">CompTIA Network+ Course</a></li>
+                                                            <li><a href="Packet-Course.aspx"> Packet Tracer Labs Course</a></li>
+                                                        </ul>
+                                                    </li>
+                                                  
+                                            
+                                                    <li><a href="come.aspx<%--contact.aspx--%>">Contact</a></li>
+
+                                                    <li>
+                                                         <div class="tp-project-2-button d-flex align-items-center">
+                                        <a href="ar/index.aspx"><span>Ar</span></a>
+                                    </div>
+                                                    </li>
+
+                                                </ul>
+                             
+                                            </nav>
+                                     
+                                        </div>
+                                                                    <!-- header site-ber button -->
+                                  
+                                    </div>
+                                    <div class="col-xl-2 col-lg-6 col-md-7 col-6">
+                                <div class="tp-header-right d-flex justify-content-end align-items-center">
+
+                                  
+
+                                    <!-- header Shop button -->
+                             
+
+                                    <!-- header site-ber button -->
+                                    <div class="tp-header-toggle-line tp-menu-bar">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header area end -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Footer area start -->
+            <section class="tp-footer-area">
+                <div class="tp-footer-top pt-110 pb-55" data-background="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
+                                <div class="tp-footer-widget footer-cols-1 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                                    <div class="tp-footer-logo">
+                                        <a href="index.aspx">
+                                            <img src="assets/img/logo/logo-2.png" style="width: 100%;" alt=""></a>
+                                    </div>
+                                  
+                                    <div class="tp-footer-social">
+                                        <a href="#"><i class="flaticon-facebook-circular-logo"></i></a>
+                                        <a href="#"><i class="flaticon-instagram"></i></a>
+                                        <a href="#"><i class="flaticon-social"></i></a>
+                                        <a href="#"><i class="flaticon-pinterest-logo"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50 ">
+                                <div class="tp-footer-widget tp-footer-widget-2-footer footer-cols-2 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
+                                    <h4 class="tp-footer-title">Usefull links</h4>
+                                    <div class="tp-footer-list">
+                                        <ul>
+                                            <li><a href="come.aspx">About us</a></li>
+                                            <li><a href="faq.apsx">FAQ’s</a></li>
+                                            <li><a href="Networks.aspx">Networks</a></li>
+                                            <li><a href="courses.aspx">Networking Courses</a></li>
+                                            <li><a href="come.aspx">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
+                                <div class="tp-footer-widget tp-footer-widget-2 footer-cols-3 wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+                                    <h4 class="tp-footer-title">Contact info</h4>
+                                    <div class="tp-footer-list">
+                                        <div class="tp-footer-widget-member d-flex">
+                                          
+                                            <div class="tp-footer-widget-img-content">
+                                                <p>Chat with us </p>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="tel:201024594238"><i class="flaticon-phone-call"></i>+ 201024594238   </a></li>
+                                            <li><a href="mailto:techubinfo@mail.com"><i class="fal fa-envelope"></i>mtwins2022@mail.com</a></li>
+                                            <li><a href="https://www.google.com/maps/@41.6758525,-86.2531698,18.17z"><i class="fa-light fa-location-dot"></i><span>
+                                                Cairo
+                                                
+                                                Egypt</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
+                                <div class="tp-footer-widget footer-cols-4 wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
+                                    <h4 class="tp-footer-title">Subscribe</h4>
+                                    <div class="tp-footer-thumb-wrap">
+                                        <p class="tp-footer-parag">Get Special Offers. We Never Spam.</p>
+                                        <div class="tp-footer-widget-content-input tp-footer-widget-content-input-2">
+                                            <form class="tp-footer-form" action="https://html.storebuild.shop/techub-prev/techub/index.html">
+                                                <input type="email" placeholder="Your Email">
+                                                <span class="tp-footer-email tp-footer-email-2"><i class="fal fa-envelope"></i></span>
+                                                <span class="tp-footer-link-btn">
+                                                    <button><i class="fa-solid fa-arrow-up-right"></i></button>
+                                                </span>
+                                            </form>
+                                        </div>
+                                        <div class="tp-footer-widget-check-box">
+                                            <div class="tp-checkout-option">
+                                                <input id="create_free_account" type="checkbox">
+                                                <label for="create_free_account">I agree with your terms & condition</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-footer-bottom pt-30 pb-30">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="tp-footer-copy-right text-center wow fadeInUp">
+                                    <p class="tp-footer-copy-paragraph">Design & Develpod by<a href="https://wa.me/201024594238">  Mahmoud twins </a>2025 – 2030</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer area end -->
+
+
+
+
+            <!-- JS here -->
+            <script src="assets/js/vendor/jquery.js"></script>
+            <script src="assets/js/vendor/waypoints.js"></script>
+            <script src="assets/js/bootstrap-bundle.js"></script>
+            <script src="assets/js/swiper-bundle.js"></script>
+            <script src="assets/js/slick.js"></script>
+            <script src="assets/js/range-slider.js"></script>
+            <script src="assets/js/magnific-popup.js"></script>
+            <script src="assets/js/nice-select.js"></script>
+            <script src="assets/js/purecounter.js"></script>
+            <script src="assets/js/wow.js"></script>
+            <script src="assets/js/isotope-pkgd.js"></script>
+            <script src="assets/js/imagesloaded-pkgd.js"></script>
+            <script src="assets/js/ajax-form.js"></script>
+            <script src="assets/js/main.js"></script>
+        </div>
+    </form>
+</body>
+</html>
